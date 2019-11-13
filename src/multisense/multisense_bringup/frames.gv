@@ -1,0 +1,21 @@
+digraph G {
+"multisense/head" -> "multisense/accel"[label="Broadcaster: /multisense_state_publisher\nAverage rate: 50.208 Hz\nMost recent transform: 1521622006.918 ( -0.470 sec old)\nBuffer length: 4.920 sec\n"];
+"multisense/head" -> "multisense/center_bottom_led_frame"[label="Broadcaster: /multisense_state_publisher\nAverage rate: 50.208 Hz\nMost recent transform: 1521622006.918 ( -0.470 sec old)\nBuffer length: 4.920 sec\n"];
+"multisense/head" -> "multisense/center_top_led_frame"[label="Broadcaster: /multisense_state_publisher\nAverage rate: 50.208 Hz\nMost recent transform: 1521622006.918 ( -0.470 sec old)\nBuffer length: 4.920 sec\n"];
+"multisense/head" -> "multisense/gyro"[label="Broadcaster: /multisense_state_publisher\nAverage rate: 50.208 Hz\nMost recent transform: 1521622006.918 ( -0.470 sec old)\nBuffer length: 4.920 sec\n"];
+"multisense/hokuyo_link" -> "multisense/head_hokuyo_frame"[label="Broadcaster: /multisense_state_publisher\nAverage rate: 50.208 Hz\nMost recent transform: 1521622006.918 ( -0.470 sec old)\nBuffer length: 4.920 sec\n"];
+"multisense/spindle" -> "multisense/hokuyo_link"[label="Broadcaster: /multisense/multisense_driver\nAverage rate: 1.333 Hz\nMost recent transform: 1521622005.490 ( 0.958 sec old)\nBuffer length: 3.000 sec\n"];
+"multisense/head" -> "multisense/left_camera_frame"[label="Broadcaster: /multisense_state_publisher\nAverage rate: 50.208 Hz\nMost recent transform: 1521622006.918 ( -0.470 sec old)\nBuffer length: 4.920 sec\n"];
+"multisense/left_camera_frame" -> "multisense/left_camera_optical_frame"[label="Broadcaster: /multisense_state_publisher\nAverage rate: 50.208 Hz\nMost recent transform: 1521622006.918 ( -0.470 sec old)\nBuffer length: 4.920 sec\n"];
+"multisense/head" -> "multisense/left_led_frame"[label="Broadcaster: /multisense_state_publisher\nAverage rate: 50.208 Hz\nMost recent transform: 1521622006.918 ( -0.470 sec old)\nBuffer length: 4.920 sec\n"];
+"multisense/head" -> "multisense/mag"[label="Broadcaster: /multisense_state_publisher\nAverage rate: 50.208 Hz\nMost recent transform: 1521622006.918 ( -0.470 sec old)\nBuffer length: 4.920 sec\n"];
+"multisense/head" -> "multisense/right_camera_frame"[label="Broadcaster: /multisense_state_publisher\nAverage rate: 50.208 Hz\nMost recent transform: 1521622006.918 ( -0.470 sec old)\nBuffer length: 4.920 sec\n"];
+"multisense/right_camera_frame" -> "multisense/right_camera_optical_frame"[label="Broadcaster: /multisense_state_publisher\nAverage rate: 50.208 Hz\nMost recent transform: 1521622006.918 ( -0.470 sec old)\nBuffer length: 4.920 sec\n"];
+"multisense/head" -> "multisense/right_led_frame"[label="Broadcaster: /multisense_state_publisher\nAverage rate: 50.208 Hz\nMost recent transform: 1521622006.918 ( -0.470 sec old)\nBuffer length: 4.920 sec\n"];
+"multisense/left_camera_optical_frame" -> "multisense/motor"[label="Broadcaster: /multisense/multisense_driver\nAverage rate: 1.333 Hz\nMost recent transform: 1521622005.490 ( 0.958 sec old)\nBuffer length: 3.000 sec\n"];
+"multisense/motor" -> "multisense/spindle"[label="Broadcaster: /multisense_state_publisher\nAverage rate: 1.333 Hz\nMost recent transform: 1521622005.490 ( 0.958 sec old)\nBuffer length: 3.000 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1521622006.448"[ shape=plaintext ] ;
+ }->"multisense/head";
+}
