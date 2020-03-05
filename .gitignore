@@ -1,3 +1,4 @@
+.catkin_workspace
 libsegwayrmp/*
 # Byte-compiled / optimized / DLL files
 __pycache__/
